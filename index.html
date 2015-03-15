@@ -17,6 +17,10 @@
 		<![endif]-->
 		
 		<style>
+			#welcome img {
+				margin-bottom: 10px;
+			}
+			
 			/* Small devices (tablets, 768px and up) */
 			@media (min-width: 768px) {
 				.vertical-center {
@@ -24,15 +28,12 @@
 					align-items: center;
 				}
 				
-				.lead {
+				#welcome .lead {
 					background-color: #F8F8F8;
 					border: 1px solid #E7E7E7;
 					border-radius: 10px;
 					padding: 5px;
 				}
-			}
-			#welcome img {
-				margin-bottom: 10px;
 			}
 		</style>
 	</head>
@@ -69,10 +70,23 @@
 		<div class="container">
 			<section id="welcome" class="row text-center vertical-center">
 				<div class="col-xs-12  col-sm-3 col-md-3">
-					<img src="images/profile_pic.jpg" alt="profile picture" class="img-circle" />
+					<img src="images/profile_pic.jpg" alt="Sunny's profile picture" class="img-circle" />
 				</div>
 				<div class="foo col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-0">
 					<p class="lead"><strong>Welcome to my portolio.</strong> I am a Software Engineer in Seattle with experience in server-side development in the mobile industry.
+				</div>
+			</section>
+			
+			<section>
+				<h2>Projects</h2>
+				<div class="row">
+					<div class="col-sm-5">
+						<h3>SmartFridge</h3>
+						<p>The SmartFridge system is an intelligent refrigerator with the goal of reducing consumer level food waste.</p>
+						<div class="text-center">
+							<img src="images/smartfridge_profile.jpg" alt="SmartFridge Project Thumbnail" class="img-responsive img-thumbnail" />
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
