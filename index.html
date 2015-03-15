@@ -17,52 +17,64 @@
 		<![endif]-->
 		
 		<style>
-			body {
-				background-color: #f3f4f7;
+			/* Small devices (tablets, 768px and up) */
+			@media (min-width: 768px) {
+				.vertical-center {
+					display: flex;
+					align-items: center;
+				}
+				
+				.lead {
+					background-color: #F8F8F8;
+					border: 1px solid #E7E7E7;
+					border-radius: 10px;
+					padding: 5px;
+				}
 			}
-			.body-wrapper {
-				background-color: #fff;
-			}
-			header .navbar-default {
-				background-color: #fff;
-				border-color: #fff;
-				border-bottom: 1px solid #E7E7E7;
+			#welcome img {
+				margin-bottom: 10px;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container body-wrapper">
-			<header>
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<a class="navbar-brand" href="#">Sunny R</a>
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
-							data-target="#main-navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="main-navbar-collapse">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-							<!-- 	<li><a href="#">Page1</a></li>
-								<li><a href="#">Page2</a></li>
-								<li><a href="#">Page3</a></li> -->
-							</ul>
-						</div>
+		<header>
+			<!-- Static navbar -->
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Sunny R</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+						data-target="#main-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 					</div>
-				</nav>
-			</header>
-			
-			<main>
-				<h1>Hello, world!</h1>
-			</main>
+					
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="main-navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+						<!-- 	<li><a href="#">Page1</a></li>
+							<li><a href="#">Page2</a></li>
+							<li><a href="#">Page3</a></li> -->
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="container">
+			<section id="welcome" class="row text-center vertical-center">
+				<div class="col-xs-12  col-sm-3 col-md-3">
+					<img src="images/profile_pic_3.jpg" alt="profile picture" class="img-circle" />
+				</div>
+				<div class="foo col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-0">
+					<p class="lead"><strong>Welcome to my portolio.</strong> I am a Software Engineer in Seattle with experience in server-side development in the mobile industry.
+				</div>
+			</section>
 		</div>
 		
 		<!-- Bootstrap core JavaScript -->
