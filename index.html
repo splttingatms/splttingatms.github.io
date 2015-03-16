@@ -39,7 +39,39 @@
 					background-color: #F8F8F8;
 					border: 1px solid #E7E7E7;
 					border-radius: 10px;
-					padding: 5px;
+					padding: 15px;
+				}
+				
+				/* add speech bubble arrow */
+				#welcome .speech-bubble:after {
+					content: "";
+					position: absolute;
+					display: block;
+					
+					width: 0;
+					z-index: 1;
+					margin-top: -20px; /* height of arrow */
+					left: -15px; /* width of arrow */
+					top: 50%;
+					
+					border-style: solid;
+					border-width: 20px 15px 20px 0;
+					border-color: transparent #F8F8F8;
+				}
+				
+				/* add border to speech bubble arrow */
+				#welcome .speech-bubble:before {
+					content: '';
+					position: absolute;
+					border-style: solid;
+					border-width: 20px 15px 20px 0;
+					border-color: transparent #E8E8E8;
+					display: block;
+					width: 0;
+					z-index: 0;
+					margin-top: -20px;
+					left: -16px;
+					top: 50%;
 				}
 			}
 		</style>
@@ -79,10 +111,11 @@
 				<div class="col-xs-12  col-sm-3 col-md-3">
 					<img src="images/profile_pic.jpg" alt="Sunny's profile picture" class="img-circle" />
 				</div>
-				<div class="foo col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-0">
-					<p class="lead"><strong>Welcome to my portolio.</strong> I am a Software Engineer in Seattle with experience in server-side development in the mobile industry.
+				<div class="lead speech-bubble col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-0">
+					<p><strong>Welcome to my portolio.</strong> I am a Software Engineer in Seattle with experience in server-side development in the mobile industry.</p>
 				</div>
 			</section>
+			<hr />
 			
 			<section>
 				<h2>Projects</h2>
