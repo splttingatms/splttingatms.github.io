@@ -31,10 +31,26 @@ title: Resume
 
 <article>
 	<h2>Computer Skills</h2>
-	<!-- todo: make these tags -->
-	<p>Languages: C#, Java, Python, PHP, HTML/CSS, JavaScript, SQL</p>
-	<p>Platforms: ASP.NET Web API/MVC, IIS, WCF, Azure, Windows Phone, Android</p>
-	<p>Software: Visual Studio, Team Foundation Server, Eclipse</p>
+	{% assign languages ="C#, Java, Python, PHP, HTML/CSS, JavaScript, SQL" | split: ", " %}
+	<p>Languages: 
+	{% for language in languages %}
+		<span class="label label-default">{{ language }}</span>
+	{% endfor %}
+	</p>
+
+	{% assign platforms ="ASP.NET Web API/MVC, IIS, WCF, Azure, Windows Phone, Android" | split: ", " %}
+	<p>Platforms: 
+	{% for platform in platforms %}
+		<span class="label label-default">{{ platform }}</span>
+	{% endfor %}
+	</p>
+
+	{% assign softwares ="Visual Studio, Team Foundation Server, Git, Eclipse" | split: ", " %}
+	<p>Software: 
+	{% for software in softwares %}
+		<span class="label label-default">{{ software }}</span>
+	{% endfor %}
+	</p>
 </article>
 
 <article>
