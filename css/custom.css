@@ -86,6 +86,14 @@
 	.post .next-post {
 		text-align: right;
 	}
+
+	.blog .next-page {
+		text-align: right;
+	}
+
+	.blog .current-page {
+		text-align: center;
+	}
 }
 
 @media print {
