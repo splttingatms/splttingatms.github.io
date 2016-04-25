@@ -13,6 +13,10 @@ title: Blog
 			
 			{{ post.content }}
 		</article>
+		
+		{% if forloop.last == false %}
+			<hr />
+		{% endif %}
 	{% endfor %}
 </div>
 
