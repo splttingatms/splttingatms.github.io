@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article>
+	<header>
+		<p class="text-muted">{{ page.date | date_to_long_string }}</p>
+		<h2>{{ page.title }}</h2>
+	</header>
+
+	{{ content }}
+</article>
+
+<hr/>
+<div class="row ">
+	<div class="col-sm-6 previous-post">
+		{% if page.previous %}
+			<p><a href="{{ page.previous.url }}">Previous: {{ page.previous.title }}</a></p>
+		{% endif %}
+	</div>
+	<div class="col-sm-6 next-post">
+		{% if page.next %}
+			<p><a href="{{ page.next.url }}">Next: {{ page.next.title }}</a></p>
+		{% endif %}
+	</div>
+</div>
+
+<h3>Comments</h3>
+<div id="disqus_thread"></div>
+<script>
+	(function() {
+	var d = document, s = d.createElement('script');
+
+	s.src = '//sunnyrodriguez.disqus.com/embed.js';
+
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

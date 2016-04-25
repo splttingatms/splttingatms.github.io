@@ -1,0 +1,29 @@
+<header>
+	<nav class="navbar navbar-inverse navbar-static-top">
+		{% include container-start.html columns=10 class="navigation" %}
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Sunny Rodriguez</a>
+				
+				<!-- hamburger button -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div id="navbar-items" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li {% if page.permalink == "/blog" %} class="active" {% endif %}><a href="/blog">Blog</a></li>
+					<li {% if page.permalink == "/projects" %} class="active" {% endif %}><a href="/projects">Projects</a></li>
+					<li {% if page.permalink == "/resume" %} class="active" {% endif %}><a href="/resume">Resume</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github" aria-hidden="true"></i><span class="visible-xs-inline"> Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="visible-xs-inline"> LinkedIn</span></a></li>
+				</ul>
+			</div>
+		{% include container-end.html %}
+	</nav>
+</header>

@@ -1,0 +1,14 @@
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+
+# Windows image file caches
+Thumbs.db
+ethumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recyle Bin used on file shares
+$RECYCLE.BIN/

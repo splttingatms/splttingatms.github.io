@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /blog
+title: Blog
+---
+<!-- todo: test pagination -->
+<div class="blog-posts">
+	{% for post in site.posts %}
+		<article>
+			<header>
+				<p class="blog-post-details text-muted">{{ post.date | date_to_long_string }}</p>
+				<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+			</header>
+			
+			{{ post.content }}
+		</article>
+	{% endfor %}
+</div>

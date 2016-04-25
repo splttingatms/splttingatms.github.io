@@ -1,0 +1,18 @@
+
+{% assign columns = 8 %}
+{% if include.columns != null %}
+	{% assign columns = include.columns %}
+{% endif %}
+
+<!-- class defaults to page title, or post if it is a post, or if it is passed into as include variable -->
+{% assign class = page.title | downcase | slug %}
+{% if page.collection == "posts" %}
+	{% assign class = "post" %}
+{% endif %}
+{% if include.class != null %}
+	{% assign class = include.class %}
+{% endif %}
+
+<div class="container {{ class }}">
+	<div class="row">
+		<div class="col-md-{{ columns }} col-md-offset-{{ 12 | minus:columns | divided_by:2 }}">
