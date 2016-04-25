@@ -4,8 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- todo: add blog page to title -->
-	<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{% if page.title %}{{ page.title }} {% if paginator %}Page {{ paginator.page}} {% endif %}| {% endif %}{{ site.title }}</title>
 	
 
 	<!-- todo: add favicon -->

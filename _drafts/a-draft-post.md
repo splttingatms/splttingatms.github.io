@@ -116,6 +116,7 @@ The extra colon in the example is to [echo a blank line](https://technet.microso
 <pre>
 Syntax:
 ECHO <i>message</i>
+
 Example:
 echo hello> sample.txt
 </pre>
@@ -123,6 +124,7 @@ echo hello> sample.txt
 <pre>
 Syntax:
 SET /P <i>variable</i>=[<i>promptString</i>]
+
 Example:
 set /p z=Hello, World!< NUL > sample.txt
 </pre>

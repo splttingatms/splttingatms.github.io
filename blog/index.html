@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 ---
+
 <div class="blog-posts">
 	{% for post in paginator.posts %}
 		<article>
@@ -18,6 +19,7 @@ title: Blog
 <hr/>
 <div class="row ">
 	<div class="col-sm-4 previous-page">
+		<!-- todo: verify that "previous" matches ordering for post as well. Previous==Older? -->
 		{% if paginator.previous_page %}
 			<p><a href="{{ paginator.previous_page_path }}">Previous Page</a></p>
 		{% endif %}
