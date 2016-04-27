@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+*.sublime-workspace
 Gemfile.lock
 
 # Windows image file caches
