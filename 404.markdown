@@ -1,0 +1,8 @@
+---
+layout: default
+permalink: /404.html
+title: 404
+---
+# 404 Not Found
+
+You have stumbled across a page that can't be found. Try navigating from the homepage instead.
