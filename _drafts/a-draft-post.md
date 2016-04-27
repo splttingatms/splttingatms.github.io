@@ -25,7 +25,7 @@ The behavior of fsutil is to fail if a file with the specified filename already 
 	c:\>fsutil file createnew sample.txt 0
 	Error:  The file exists.
 
-This method is perfect if you do not care about the contents of the file and need an exact file size. The downside is that fsutil [requires administrator privelages](https://technet.microsoft.com/en-us/library/cc753059.aspx) to run. Also, the inability to control the overwrite behavior makes this more of a challenge to use in a batch script; it is possible but you will need to capture the error which is more involved than the options below.
+This method is perfect if you do not care about the contents of the file and need an exact file size. The downside is that fsutil [requires administrator privileges](https://technet.microsoft.com/en-us/library/cc753059.aspx) to run. Also, the inability to control the overwrite behavior makes this more of a challenge to use in a batch script; it is possible but you will need to capture the error which is more involved than the options below.
 
 #### Use if:
 
@@ -36,7 +36,7 @@ This method is perfect if you do not care about the contents of the file and nee
 
 * You want to specify the text in the file
 * You need to overwrite the file if it exists
-* You do not have administator privelages
+* You do not have administrator privileges
 
 
 ### Method 2: [copy](https://technet.microsoft.com/en-us/library/bb490886.aspx)
