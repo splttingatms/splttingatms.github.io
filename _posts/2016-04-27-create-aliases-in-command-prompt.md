@@ -1,5 +1,5 @@
 ---
-title: Create Aliases/Macros in Command Prompt
+title: Create Aliases in Command Prompt
 layout: post
 ---
 There are multiple ways of creating aliases or macros in Command Prompt. There is a built in DOSKEY command that creates aliases but you may want to make the aliases persist through sessions. That is where batch files come in. If you want to make a project environment with project specific aliases then I recommend using Method 2: DOSKEY. If you have generic tools that you want globally available then Method 1: Batch files is the best option.
@@ -115,14 +115,13 @@ Another option to persist aliases is to modify the command processor's `AutoRun`
 #### DOSKEY syntax
 
 The DOSKEY program has special syntax that mirrors batch file syntax. For example, parameters are referenced using the dollar sign rather than percents. Likewise, the redirection commands also have equivalent counterparts. The table below summarizes the syntax equivalences.
-http://ss64.com/nt/syntax-args.html
 
 <table class="table table-striped table-bordered table-condensed">
 	<thead>
 		<tr>
 			<th>Description</th>
-			<th>Batch Syntax</th>
-			<th>DOSKEY Syntax</th>
+			<th><a href="http://ss64.com/nt/syntax-args.html">Batch Syntax</a></th>
+			<th><a href="https://technet.microsoft.com/en-us/library/bb490894.aspx#ECAA">DOSKEY Syntax</a></th>
 		</tr>
 	</thead>
 	<tbody>
