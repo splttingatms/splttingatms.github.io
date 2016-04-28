@@ -4,6 +4,8 @@ title:  "How to Create a File in Window's Command Prompt"
 ---
 Command prompt provides many tools for creating a new file. Each tool has its pros and cons that may be better suited for the task at hand. If you want to create empty files, see methods 1-3. If you want to create text files with specific content then skip to method 4.
 
+**Edit 4/27/16**: If you want to make aliases for these command check out the new blog post [Create Aliases in Command Prompt](/2016/04/27/create-aliases-in-command-prompt.html).
+
 1. fsutil
 2. copy
 3. redirection syntax
