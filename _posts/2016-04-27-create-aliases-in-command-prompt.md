@@ -37,7 +37,12 @@ Where you save the batch file is important because the Command Prompt only has r
 
 From here, you have the option of either modifying the *user variables* to make the aliases only affect the current user, or modify the *system variables* to make the aliases globally available to all users. Modify the appropriate PATH variable and add the directory where your alias batch files live. For example, I keep my batch files under the directory D:\Tools.
 
-![Edit environment variable](/assets/editenvironmentvariabledialogwindow.png){: .img-responsive }
+<!-- ![Edit environment variable](/assets/editenvironmentvariabledialogwindow.png){: .img-responsive } -->
+<div class="row">
+	<div class="col-md-6">
+		<p><img class="img-responsive" src="/assets/editenvironmentvariabledialogwindow.png" alt="Edit Environment Variable Dialog" /></p>
+	</div>
+</div>
 
 #### Passing arguments
 
@@ -110,7 +115,7 @@ Another option to persist aliases is to modify the command processor's `AutoRun`
 2. Right-Click > New > String Value
 3. Enter the variable name `AutoRun` and the value should point to your environment initialization batch file
 
-![Command Processor's AutoRun registry value](/assets/commandprocessorautorunregistry.png)
+![Command Processor's AutoRun registry value](/assets/commandprocessorautorunregistry.png){: .img-responsive }
 
 #### DOSKEY syntax
 
