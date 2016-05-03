@@ -6,6 +6,8 @@
 
 	<title>{% if page.title %}{{ page.title }} {% if paginator %}Page {{ paginator.page}} {% endif %}| {% endif %}{{ site.title }}</title>
 	
+	{% feed_meta %}
+	
 	<link rel="icon" type="image/png" href="/assets/favicon.ico">
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
