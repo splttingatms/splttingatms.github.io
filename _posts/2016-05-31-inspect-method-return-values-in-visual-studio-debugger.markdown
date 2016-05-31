@@ -7,7 +7,7 @@ Visual Studio has a great hidden feature that allows developers to view method r
 
 <script src="https://gist.github.com/splttingatms/4edf0bc9bfb3c66dcf1def4a06289380.js"></script>
 
-## Autos/Locals Windows
+### Autos/Locals Windows
 The return values are automatically added to both the Autos Window (Debug > Windows > Autos) and Locals Window (Debug > Windows > Locals).
 
 <figure>
@@ -20,7 +20,7 @@ The return values are automatically added to both the Autos Window (Debug > Wind
 	<figcaption>Locals Window</figcaption>
 </figure>
 
-## Immediate/Watch Windows
+### Immediate/Watch Windows
 Return values are also stored in *pseudo variables* called `$ReturnValue*`, where the asterisk refers to the method call index. You can either call the variable directly under the Immediate Window (Debug > Windows > Immediate) or add them to your Watch list (Debug > Windows > Watch > Watch 1).
 
 Note: The name of the variable changed between VS2013 and VS2015. Previously the pseudo variable without an index `$ReturnValue` to referred to the last function's return value, but in VS2015 you must specify an index.
