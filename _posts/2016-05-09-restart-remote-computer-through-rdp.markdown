@@ -2,7 +2,9 @@
 title: Restart a Remote Computer through RDP
 layout: post
 ---
-I noticed Remote Desktop Protocol (RDP) replaces the usual power options of "Shutdown" and "Restart" with "Disconnect" when remoting into a computer. As you can see below, the power options under the start menu and through Window's [Quick Link Menu](http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts) only show the "Disconnect" option.
+I noticed Remote Desktop Protocol (RDP) replaces the usual power options of "Shutdown" and "Restart" with "Disconnect" when remoting into a computer. Here is how to create a custom shortcut to bring back Shutdown/Restart buttons.
+
+As you can see below, the power options under the start menu and through Window's [Quick Link Menu](http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts) only show the "Disconnect" option.
 
 ![Start Menu Power Option](/assets/restart-remote-computer-through-rdp/startmenupoweroptions.png){: .img-responsive}
 
