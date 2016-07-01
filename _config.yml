@@ -19,6 +19,6 @@ collections:
 - projects
 permalink: /blog/:year/:month/:day/:title.html
 gems: [jekyll-paginate, jekyll-feed]
-paginate: 3
+paginate: 5
 paginate_path: "/blog/page:num/"
 timezone: US/Pacific
