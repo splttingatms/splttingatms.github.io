@@ -3,7 +3,9 @@ title: Removing OWIN Hosting Trace Listener
 layout: post
 ---
 
-Microsoft's OWIN hosting does something unexpected when starting up a self-hosted service, such as an ASP.NET Web API service. Calling `Microsoft.Owin.Hosting.WebApp.Start()` will automatically add a trace listener with the name *HostingTraceListener*. Below is some code that displays assigned trace listeners before and after starting up a service.
+Did you know that starting up an OWIN self-hosted service automatically adds a trace log listener? If you are seeing duplicate log messages, this may be your problem! Here is how to take back control and remove the listener.
+
+The trace listener is automatically added when calling `Microsoft.Owin.Hosting.WebApp.Start()`. As you can see in the example below, a trace listener with the name *HostingTraceListener* is added after starting the service.
 
 <script src="https://gist.github.com/splttingatms/90b240de8ab3aec9f2583275e48ec5d7.js"></script>
 
@@ -22,7 +24,7 @@ private void EnableTracing(StartContext context)
     ...
 ```
 
-In most situations the extra listener would be fine, but you will start seeing repeated logs if you added a console trace listener manually. This is because the HostingTraceListener outputs to console by default. The code below produces double logs unexpectedly because of the sneaky Owin trace listener.
+In most situations the extra listener would be fine, but you will start seeing duplicate logs if you previously added a listener manually. This is because the HostingTraceListener outputs to console by default. The example below shows how a single call to TraceInformation shows up twice in the console output.
 
 <script src="https://gist.github.com/splttingatms/23677bbc4dc8a94d1fb162e994009cdc.js"></script>
 
@@ -31,9 +33,9 @@ In most situations the extra listener would be fine, but you will start seeing r
 	<figcaption>Double Logs from hidden trace listener</figcaption>
 </figure>
 
-### How to remove HostingTraceListener
+### Removing the HostingTraceListener
 
-There is a way to remove the trace listener though. Simply call Trace.Listeners.Remove and pass in the name of the OWIN listener as below. Make sure to call remove *after* starting the service because the listener won't exist beforehand.
+Call Trace.Listeners.Remove and pass in the name of the OWIN listener as below. Make sure to call remove *after* starting the service because the listener won't exist beforehand.
 
 ```c#
 System.Diagnostics.Trace.Listeners.Remove("HostingTraceListener");
