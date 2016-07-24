@@ -72,6 +72,10 @@
 	margin-bottom: 0px;
 }
 
+.resume section header p {
+	margin-bottom: 0;
+}
+
 
 /* todo: add some extra margin to line up to bottom instead of top*/
 @media (min-width: 768px) {

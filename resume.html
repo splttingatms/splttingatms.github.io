@@ -12,8 +12,8 @@ title: Resume
 <!-- todo: use appropriate tags here. mask email to avoid spam bots -->
 <header class="contact-info">
 	<h1>Sunny Rodriguez</h1>
-	<p>Seattle, WA ● (360) 213-6473 ● sunny.rodriguez@outlook.com<p>
-	<p>Driven software engineer skilled in server-side development within the mobile industry</p>
+	<p>Seattle, WA | (360) 610-7866 | sunny.rodriguez@outlook.com | github.com/splttingatms<p>
+	<p>Web developer experienced in building API services that can scale to a global level.</p>
 </header>
 
 <article>
@@ -23,34 +23,10 @@ title: Resume
 			<div class="col-sm-8">
 				<h3>University of Washington <small>Seattle, WA</small></h3>
 			</div>
-			<p class="col-sm-4">Graduated: June 2013</p>
+			<p class="col-sm-4">2013</p>
 		</header>
 		<p>Bachelor of Science in Electrical Engineering</p>
 	</section>
-</article>
-
-<article>
-	<h2>Computer Skills</h2>
-	{% assign languages ="C#, Java, Python, PHP, HTML/CSS, JavaScript, SQL" | split: ", " %}
-	<p>Languages: 
-	{% for language in languages %}
-		<span class="label label-default">{{ language }}</span>
-	{% endfor %}
-	</p>
-
-	{% assign platforms ="ASP.NET Web API/MVC, IIS, WCF, Azure, Windows Phone, Android" | split: ", " %}
-	<p>Platforms: 
-	{% for platform in platforms %}
-		<span class="label label-default">{{ platform }}</span>
-	{% endfor %}
-	</p>
-
-	{% assign softwares ="Visual Studio, Team Foundation Server, Git, Eclipse" | split: ", " %}
-	<p>Software: 
-	{% for software in softwares %}
-		<span class="label label-default">{{ software }}</span>
-	{% endfor %}
-	</p>
 </article>
 
 <article>
@@ -58,10 +34,9 @@ title: Resume
 	<section>
 		<header class="row">
 			<div class="col-sm-8">
-				<h3>Membership SDE <small>Member Service Team</small></h3>
-				<p>Microsoft, Redmond, WA</p>
+				<h3>Member Services SDE <small>Microsoft</small></h3>
 			</div>
-			<p class="col-sm-4">September 2013-March 2016</p>
+			<p class="col-sm-4">2013-2016</p>
 		</header>
 		<ul>
 			<li>Designed a high-throughput middle layer service to wrap dependencies on partner services</li>
@@ -75,9 +50,8 @@ title: Resume
 		<header class="row">
 			<div class="col-sm-8">
 				<h3>Undergrad Student Researcher <small>MobileASL</small></h3>
-				<p>University of Washington, Seattle, WA</p>
 			</div>
-			<p class="col-sm-4">November 2009–June 2013</p>
+			<p class="col-sm-4">2009–2013</p>
 		</header>
 		<ul>
 			<li>Co-authored ASSETS 2010 & 2013 research paper submissions
@@ -86,35 +60,35 @@ title: Resume
 					<li><a href="http://mobileasl.cs.washington.edu/publications.html">2010. A Web-Based User Survey for Evaluating Power Saving Strategies for Deaf Users of MobileASL</a></li>
 				</ul>
 			</li>
-			<li>Developed a PHP platform to conduct web-based user studies for video quality</li>
-			<li>Ported open-source IMSDroid/Doubango project to HTC Thunderbolt</li>
+			<li>Implemented web-based user studies using ZervWizard framework in PHP</li>
+			<li>Ported open-source VoIP IMSDroid/Doubango project to HTC Thunderbolt</li>
 		</ul>
 	</section>
 	<section>
 		<header class="row">
 			<div class="col-sm-8">
-				<h3>Windows Phone SDE Intern <small>SoHo</small></h3>
-				<p>Microsoft, Redmond, WA</p>
+				<h3>Windows Phone SDE Intern <small>Microsoft</small></h3>
 			</div>
-			<p class="col-sm-4">June 2012–September 2012</p>
+			<p class="col-sm-4">Summer 2012</p>
 		</header>
 		<ul>
-			<li>Worked with another intern to design a WiFi data collection service to boost SoHo data size</li>
-			<li>Created network speed test app on Windows 8 platform as demonstration of service</li>
-			<li>Published data to Microsoft-internal cloud-based big data platform</li>
+			<li>Partnered with an intern to design a Wi-Fi data collection service to boost SoHo data size</li>
+			<li>Created <a href="https://www.microsoft.com/store/apps/9wzdncrfhx52">Network Speed Test app</a> on Windows 8 platform as demonstration of service</li>
+			<li>Published and analyzed data on Microsoft-internal cloud-based big data platform</li>
 		</ul>
 	</section>
 	<section>
 		<header class="row">
 			<div class="col-sm-8">
-				<h3>Windows Phone Explorer Intern <small>SeattleRace</small></h3>
-				<p>Microsoft, Redmond, WA</p>
+				<h3>Windows Phone Explorer Intern <small>Microsoft</small></h3>
 			</div>
-			<p class="col-sm-4">June 2011–September 2011</p>
+			<p class="col-sm-4">Summer 2011</p>
 		</header>
 		<ul>
 			<li>Underwent full development cycle of a location-based game on WP7 OS</li>
+			<li>Collaborated with two interns and rotated between the three disciplines</li>
 			<li>Designed game UI, developed MPN web service, and tested game initialization interface</li>
+			<li>Incorporated the recently developed Microsoft push notification service into the game</li>
 		</ul>
 	</section>
 </article>
@@ -122,11 +96,31 @@ title: Resume
 <article>
 	<h2>Projects</h2>
 	<section>
-		<h3>SmartFridge Capstone</h3>
-		<p>An embedded project with the goal of reducing household foodwaste</p>
+		<header class="row">
+			<h3 class="col-sm-8">KhanDotNet</h3>
+			<p class="col-sm-4"><a href="https://github.com/splttingatms/KhanDotNet">https://github.com/splttingatms/KhanDotNet</a></p>
+		</header>
+		<p>A .NET client library for Khan Academy APIs.</p>
 	</section>
 	<section>
-		<h3>Space Craft Control System</h3>
-		<p>A control system involving various peripherals such as proximity and temperature sensors, speakers, input keyboard, and LCD display</p>
+		<header class="row">
+			<h3 class="col-sm-8">EasyConsole</h3>
+			<p class="col-sm-4"><a href="https://github.com/splttingatms/EasyConsole">https://github.com/splttingatms/EasyConsole</a></p>
+		</header>
+		<p>A .NET library that makes it easy for develoeprs to quickly build menu interfaces for console applications.</p>
+	</section>
+	<section>
+		<header class="row">
+			<h3 class="col-sm-8">TicTacToe with Friends</h3>
+			<p class="col-sm-4"><a href="https://github.com/splttingatms/TicTacToe">https://github.com/splttingatms/TicTacToe</a></p>
+		</header>
+		<p>A real-time tic-tac-toe game using ASP.NET SignalR. Live demo at <a href="http://tictactoefriends.azurewebsites.net/">http://tictactoefriends.azurewebsites.net</a>.</p>
+	</section>
+	<section>
+		<header class="row">
+			<h3 class="col-sm-8">RouteLapser</h3>
+			<p class="col-sm-4"><a href="https://github.com/splttingatms/RouteLapser">https://github.com/splttingatms/RouteLapser</a></p>
+		</header>
+		<p>A demo to create Google Street View hyperlapse videos from TCX routes.</p>
 	</section>
 </article>
